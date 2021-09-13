@@ -21,23 +21,6 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 import { supabase } from "./supabaseClient";
 
-// const Links = ["Dashboard", "Projects", "Report"];
-
-// const NavLink = ({ children }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={"md"}
-//     _hover={{
-//       textDecoration: "none",
-//       bg: useColorModeValue("gray.200", "gray.700"),
-//     }}
-//     href={"hello"}
-//   >
-//     {children}
-//   </Link>
-// );
-
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -73,18 +56,7 @@ export default function Navbar() {
               >
                 <Link to="dashboard"> Dashboard</Link>
               </Text>
-              <Text
-                fontSize={"xl"}
-                px={4}
-                py={1}
-                rounded={"md"}
-                _hover={{
-                  textDecoration: "none",
-                  bg: useColorModeValue("gray.200", "gray.700"),
-                }}
-              >
-                Projects
-              </Text>
+
               <Text
                 fontSize={"xl"}
                 px={4}
